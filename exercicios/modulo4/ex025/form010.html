@@ -10,7 +10,7 @@
     <form action="" method="get" autocomplete="on">
         <p>
             <label for="iano">Em que ano voçê nasceu?</label>
-            <input type="number" name="ano" id="iano" min="1900" max="2026" oninput="calcIdade()">
+            <input type="number" name="ano" id="iano" min="1900" max="2026" oninput="CalcIdade()">
         </p>
         <p>
             <label for="iidade">Sua Idade</label>
@@ -22,7 +22,7 @@
         </p>
     </form>
     <script>
-        functioncalcIdade(){
+        Function CalcIdade(){
             Let atual = new date().getfullyear()
             iidade.innerHTML=Number(atual)-Number(iano.value)
         }
